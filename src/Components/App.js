@@ -10,11 +10,17 @@ function App() {
       <NavBar />
 
       <Switch>
+        <Route path="/shelf/add">
+          <NewBook />
+        </Route>
 
+        <Route path="/shelf">
+          <Shelf />
+        </Route>
+        
         <Route exact path="/">
           <Home />
         </Route>
-
       </Switch>
 
     </div>

@@ -1,0 +1,37 @@
+<mxfile host="65bd71144e">
+    <diagram id="SJXQY4Qy1ZYiAm4-r1oR" name="Page-1">
+        <mxGraphModel dx="816" dy="809" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="20" value="" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="30" width="760" height="1340" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="40" width="720" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="Home/About" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="110" y="50" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="Shelf" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="385" y="50" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="Add Book" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="640" y="50" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="BOOKSELF" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="110" y="120" width="610" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="Main Container&lt;br&gt;&lt;br&gt;&lt;u&gt;Home/About&lt;/u&gt;: Will give a brief introduction about the App&lt;br&gt;&lt;br&gt;&lt;u&gt;Shelf&lt;/u&gt;: Shows a list of books that you've read&lt;br&gt;&lt;br&gt;&lt;u&gt;Add New Book&lt;/u&gt;: Form that allows user to log book information: Title, Author, Pages, Rating&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="210" width="680" height="410" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="Shelf:&lt;br&gt;&lt;br&gt;- Book1&lt;br&gt;- Book 2&lt;br&gt;- Book 3&lt;br&gt;- Book 4&lt;br&gt;&lt;br&gt;&lt;br&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="660" width="680" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="Form:&lt;br&gt;&lt;br&gt;Title&lt;br&gt;&lt;br&gt;Author&lt;br&gt;&lt;br&gt;Read: Yes/No" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="970" width="680" height="260" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
