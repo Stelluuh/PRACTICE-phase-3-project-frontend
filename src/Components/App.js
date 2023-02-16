@@ -1,8 +1,10 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import NavBar from './NavBar';
+import NewBook from './NewBook';
+import Shelf from './Shelf';
 import Home from './Home';
-import './App.css';
+
 
 function App() {
   return (

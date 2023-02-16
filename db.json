@@ -5,6 +5,12 @@
             "Title": "The Name Of The Wind",
             "Author": "Patrick Rothfus",
             "Genre": "Fantasy Fiction"
+        },
+        {
+             "id": 2,
+            "Title": "A Wise Man's Fear",
+            "Author": "Patrick Rothfus",
+            "Genre": "Fantasy Fiction"
         }
     ]
 }
