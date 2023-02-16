@@ -4,13 +4,15 @@
             "id": 1,
             "Title": "The Name Of The Wind",
             "Author": "Patrick Rothfus",
-            "Genre": "Fantasy Fiction"
+            "Genre": "Fantasy Fiction",
+            "Comment": "This is so far my favorite book! Read it three times"
         },
         {
              "id": 2,
             "Title": "A Wise Man's Fear",
             "Author": "Patrick Rothfus",
-            "Genre": "Fantasy Fiction"
+            "Genre": "Fantasy Fiction",
+            "Comment": "Not as good as the first one, but still enjoyable."
         }
     ]
 }
