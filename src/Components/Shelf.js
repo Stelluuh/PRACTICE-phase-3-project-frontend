@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import BookCard from './BookCard'
 
 const Shelf = () => {
   const [books, setBooks] = useState([])
@@ -6,13 +7,34 @@ const Shelf = () => {
   useEffect(() => {
     fetch('http://localhost:3001/books')
       .then(response => response.json())
-      .then(data => console.log(data))
+      .then(data => setBooks(data))
   }, [])
+
+  console.log({books})
+ 
+  const bookList = books.map((b) => {
+    return (
+      <BookCard key={b.id} {...b}/>
+    )
+  })
 
 
   return (
     <div>
-      <li>List of books</li>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Comment</th>
+          </tr>
+        </thead>
+        <tbody>
+          {bookList}
+        </tbody>
+      </table>
+    
     </div>
   )
 }
