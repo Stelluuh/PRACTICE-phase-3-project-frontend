@@ -8,8 +8,8 @@ const BookCard = ({id, title, author, genre, comment}) => {
       <td>{genre}</td>
       <td>{comment}</td>
       <td>
-        <button>Edit</button>
-        <button>Delete</button>
+        <button type="button" class="btn btn-primary btn-sm">Edit</button>
+        <button type="button" class="btn btn-secondary btn-sm">Delete</button>
       </td>
     </tr>
   )
