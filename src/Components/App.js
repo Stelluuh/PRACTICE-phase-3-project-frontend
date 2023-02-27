@@ -12,11 +12,11 @@ function App() {
       <NavBar />
 
       <Switch>
-        <Route path="/shelf/add">
+        <Route path="/bookshelf/add">
           <NewBook />
         </Route>
 
-        <Route path="/shelf">
+        <Route path="/bookshelf">
           <Shelf />
         </Route>
         

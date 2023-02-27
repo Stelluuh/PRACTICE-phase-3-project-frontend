@@ -1,0 +1,25 @@
+input, textarea {
+    display: block;
+    width: 90%;
+    height: 25px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+input:focus {
+    background-color: none;
+    outline: none;
+    background-color: #fff;
+    opacity: .6;
+  }
+
+
+#submit{
+    border: 0;
+    background-color: #F0EBCE;
+    padding: 0.5rem; 
+  }

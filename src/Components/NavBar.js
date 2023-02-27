@@ -1,14 +1,15 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import '../Stylesheets/Navbar.css'
 
 
 const NavBar = () => {
   return (
-    <div>
+    <div className='navbar'>
       <nav>
         <NavLink exact to="/">Home</NavLink>
-        <NavLink to="/shelf">Shelf</NavLink>
-        <NavLink to="/shelf/add">Add Book</NavLink>
+        <NavLink to="/bookshelf">Bookshelf</NavLink>
+        <NavLink to="/bookshelf/add">Add Book</NavLink>
       </nav>
     </div>
   )

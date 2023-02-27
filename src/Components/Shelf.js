@@ -5,7 +5,7 @@ const Shelf = () => {
   const [books, setBooks] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:3001/books')
+    fetch('http://localhost:9292/books')
       .then(response => response.json())
       .then(data => setBooks(data))
   }, [])
@@ -27,7 +27,6 @@ const Shelf = () => {
             <th>Title</th>
             <th>Author</th>
             <th>Genre</th>
-            <th>Comment</th>
           </tr>
         </thead>
         <tbody>

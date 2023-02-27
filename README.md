@@ -6,7 +6,7 @@
 4. Open the my-app-frontend file in your terminal and run: npm install
     (note: this project was created using React V5. If you run into issues, make sure to install the appropriate package, run npm install react-router-dom@5)
 5. Under the same file, run the json-server: npm run server
-6. Run Reacter server: npm start
+6. Run React server: npm start
 
 
 

@@ -1,30 +1,47 @@
 import React, { useState } from 'react'
-// import { useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
+import '../Stylesheets/NewBook.css'
 
 const NewBook = () => {
 
   const [title, setTitle] = useState('')
   const [author, setAuthor] = useState('')
   const [genre, setGenre] = useState('')
-  const [comment, setComment] = useState('')
-
+  const [location, setLocation] = useState('')
+  const [read, setRead] = useState(null)
+  const [reader, setReader] = useState('')
+  const history = useHistory()
+// 
   const handleSubmit = (e) => {
     e.preventDefault();
     const newItem = {
       title: title,
       author: author,
       genre: genre,
-      comment: comment 
+      location: location,
+      read: read,
+      reader: reader 
     }
 
     setTitle('')
     setAuthor('')
     setGenre('')
-    setComment('')
+    setLocation('')
+    setRead(null)
+    setReader('')
 
-    // history.push('/shelf')
+    history.push('/bookshelf')
 
     console.log(newItem)
+
+    fetch('http://localhose:9292/books', {
+      method: "POST",
+      headers: {
+        "Content-Type" : "application/json"
+      },
+      body: JSON.stringify(newItem)
+    })
+
   }
 
 
@@ -56,17 +73,33 @@ const NewBook = () => {
                             onChange={e => setGenre(e.target.value)}
 
                         />
+                        <br/>
+                        <label>Location:</label>
+                        <input
+                            type="text"
+                            value={location}
+                            onChange={e => setLocation(e.target.value)}
+
+                        />
+                        <br/>
+                        <label>Read:</label>
+                        <input
+                            type="text" 
+                            value={read}
+                            onChange={e => setRead(e.target.value)}
+
+                        />
+                        <br/>
+                        <label>Reader:</label>
+                        <input
+                            type="text"
+                            value={reader}
+                            onChange={e => setReader(e.target.value)}
+
+                        />
                     </div>
                     <div className="bottom-container">
-                    <br/>
-                    <label>Comment:</label>
-                    <textarea
-                        className="memory"
-                        type="text"
-                        value={comment}
-                        onChange={e => setComment(e.target.value)}
-                    />
-                    <br/>
+
                     <button 
                         type="submit"
                         id="submit"
