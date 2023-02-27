@@ -11,10 +11,10 @@ const NewBook = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const newItem = {
-      Title: title,
-      Author: author,
-      Genre: genre,
-      Comment: comment 
+      title: title,
+      author: author,
+      genre: genre,
+      comment: comment 
     }
 
     setTitle('')
@@ -24,14 +24,9 @@ const NewBook = () => {
 
     // history.push('/shelf')
 
-    fetch('http://localhost:3001/shelf', {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(newItem)
-    })
+    console.log(newItem)
   }
+
 
   return (
     <div>
