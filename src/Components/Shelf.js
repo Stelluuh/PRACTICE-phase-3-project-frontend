@@ -11,10 +11,20 @@ const Shelf = () => {
   }, [])
 
   console.log({books})
+
+  const handleDeleteBook = (deletedBook) => {
+    const updatedBooks = books.filter(book => book.id !== deletedBook.id)
+    setBooks(updatedBooks)
+    // console.log('deleted!')
+  }
  
-  const bookList = books.map((b) => {
+  const bookList = books.map((book) => {
     return (
-      <BookCard key={b.id} {...b}/>
+      <BookCard 
+        key={book.id}
+        book={book}
+        onDeleteBook = {handleDeleteBook}
+        />
     )
   })
 

@@ -1,6 +1,15 @@
 import React from 'react'
 
-const BookCard = ({id, title, author, genre, bookshelf}) => {
+const BookCard = ({book, onDeleteBook}) => {
+
+  const {title, author, genre, bookshelf} = book
+
+  const handleDeleteButton = () => {
+    fetch(`http://localhost:9292/books/${book.id}`, {
+      method: "DELETE",
+    })
+    onDeleteBook(book)
+  }
   return (
     <tr>
       <td>{title}</td>
@@ -9,8 +18,8 @@ const BookCard = ({id, title, author, genre, bookshelf}) => {
       <td>{bookshelf.location}</td>
       
       <td>
-        <button type="button" class="btn btn-primary btn-sm">Edit</button>
-        <button type="button" class="btn btn-secondary btn-sm">Delete</button>
+        <button type="button" className="btn btn-primary btn-sm">Edit</button>
+        <button type="button" className="btn btn-secondary btn-sm" onClick={handleDeleteButton}>Delete</button>
       </td>
     </tr>
   )
