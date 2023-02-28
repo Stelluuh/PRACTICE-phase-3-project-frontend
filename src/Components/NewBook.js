@@ -32,8 +32,6 @@ const NewBook = () => {
 
     history.push('/bookshelf')
 
-    console.log(newItem)
-
     fetch('http://localhose:9292/books', {
       method: "POST",
       headers: {
