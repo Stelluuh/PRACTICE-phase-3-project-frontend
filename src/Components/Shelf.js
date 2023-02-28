@@ -27,6 +27,7 @@ const Shelf = () => {
             <th>Title</th>
             <th>Author</th>
             <th>Genre</th>
+            <th>Location</th>
           </tr>
         </thead>
         <tbody>
