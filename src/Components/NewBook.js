@@ -8,7 +8,7 @@ const NewBook = () => {
   const [author, setAuthor] = useState('')
   const [genre, setGenre] = useState('')
   const [location, setLocation] = useState('')
-  const [read, setRead] = useState(null)
+  const [read, setRead] = useState('')
   const [reader, setReader] = useState('')
   const history = useHistory()
 // 
@@ -27,12 +27,12 @@ const NewBook = () => {
     setAuthor('')
     setGenre('')
     setLocation('')
-    setRead(null)
+    setRead('')
     setReader('')
 
     history.push('/bookshelf')
 
-    fetch('http://localhose:9292/books', {
+    fetch('http://localhost:9292/books', {
       method: "POST",
       headers: {
         "Content-Type" : "application/json"

@@ -10,7 +10,7 @@ const Shelf = () => {
       .then(data => setBooks(data))
   }, [])
 
-  console.log({books})
+  // console.log({books})
 
   const handleDeleteBook = (deletedBook) => {
     const updatedBooks = books.filter(book => book.id !== deletedBook.id)
@@ -22,9 +22,9 @@ const Shelf = () => {
     return (
       <BookCard 
         key={book.id}
-        book={book}
+        book={book} 
         onDeleteBook = {handleDeleteBook}
-        />
+      />
     )
   })
 
