@@ -1,10 +1,20 @@
 import React from 'react'
+import '../Stylesheets/Home.css'
 
 const Home = () => {
   return (
-    <div>
-      <h3>BookSelf</h3>
-      <p>BookSelf, is an App that allows users to keep track of all the books they have read in their lifetime. Users are allowed to add, remove, or edit books from their shelf. The edit feature allows users to make comments on the book they have read. </p>
+    <div className="home">
+      <div className="home-container">
+        <br/>
+        <br/>
+      <h2>BookSelf</h2>
+      <p>BookSelf, is an App that allows users to keep track of all the books they have read in their lifetime. 
+        <br/>
+        <br/>
+        Users are allowed to add, remove, or edit books from their shelf.
+      </p>
+      
+      </div>
     </div>
   )
 }

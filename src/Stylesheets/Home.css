@@ -1,0 +1,30 @@
+.home{
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0, 0, 0, 0.01
+    )), url('https://img.freepik.com/free-photo/wooden-table-with-blurred-background_1134-14.jpg?w=2000&t=st=1677704370~exp=1677704970~hmac=7d579ffaf9f9edf7a05561a15d961eb1318d43d83c8b8586d98176ba57452c11');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* keeps background image steady during scroll*/
+    height: 100vh;
+    color: whitesmoke;
+    text-align: center;
+    margin: 0;
+    position: relative;
+  }
+  
+
+  .home-container h3{
+    margin-top: 0;
+  }
+
+  /* .home-container{
+    margin-top: 50px
+  } */
+
+  .home-container p{
+    text-align:justify;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 50%
+  }

@@ -18,7 +18,7 @@ const NewReader = ({ onAddReader }) => {
             body: JSON.stringify(newName)
         })
         .then(response => response.json())
-        .then(newReader =>{
+        .then(newReader => {
             onAddReader(newReader)
             setName('')
         })

@@ -1,8 +1,11 @@
 import React from 'react'
+import '../Stylesheets/BookCard.css'
+
 
 const BookCard = ({book, onDeleteBook}) => {
   
   const {title, author, bookshelf, genre} = book
+  console.log(bookshelf)
 
   const handleDeleteButton = () => {
     fetch(`http://localhost:9292/books/${book.id}`, {
@@ -18,8 +21,8 @@ const BookCard = ({book, onDeleteBook}) => {
       {/* <td>{bookshelf.location}</td> */}
       
       <td>
-      <button type="button" className="btn btn-primary btn-sm">Edit</button>
-        <button type="button" className="btn btn-secondary btn-sm" onClick={handleDeleteButton}>Delete</button>
+      <button className="btn1" type="button" >Edit</button>
+      <button className="btn2" type="button" onClick={handleDeleteButton}>Delete</button>
       </td>
     </tr>
   )

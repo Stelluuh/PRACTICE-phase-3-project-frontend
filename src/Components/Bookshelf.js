@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import BookCard from './BookCard'
+import '../Stylesheets/Bookshelf.css'
 
 const Shelf = () => {
   const [books, setBooks] = useState([])
@@ -30,7 +31,7 @@ const Shelf = () => {
 
 
   return (
-    <div>
+    <div className="bookshelf">
       <table>
         <thead>
           <tr>

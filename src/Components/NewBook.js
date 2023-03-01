@@ -45,7 +45,7 @@ const NewBook = () => {
 
 
   return (
-    <div>
+    <div className="newbook">
       <p>New Book Form</p>
       <form className="newItem" onSubmit={handleSubmit}>
         <div className="top-container">
