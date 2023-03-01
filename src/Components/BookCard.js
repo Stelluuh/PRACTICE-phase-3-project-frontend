@@ -3,7 +3,6 @@ import React from 'react'
 const BookCard = ({book, onDeleteBook}) => {
   
   const {title, author, bookshelf, genre} = book
-  console.log(bookshelf.location)
 
   const handleDeleteButton = () => {
     fetch(`http://localhost:9292/books/${book.id}`, {
@@ -16,7 +15,7 @@ const BookCard = ({book, onDeleteBook}) => {
       <td>{title}</td>
       <td>{author}</td> 
       <td>{genre}</td>
-      <td>{bookshelf.location}</td>
+      {/* <td>{bookshelf.location}</td> */}
       
       <td>
       <button type="button" className="btn btn-primary btn-sm">Edit</button>

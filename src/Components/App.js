@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import NavBar from './NavBar';
 import NewBook from './NewBook';
@@ -8,9 +8,18 @@ import Readers from './Readers'
 
 
 const App = () => {
+  const [readers, setReaders] = useState([])
 
-const [readers, setReaders] = useState([])
-
+  useEffect(() => {
+    fetch('http://localhost:9292/readers')
+    .then(response => response.json())
+    .then(data => setReaders(data))
+  }, [])
+  
+  // console.log(readers)
+  
+  
+  
 
   return (
     <div className="App">
@@ -22,11 +31,15 @@ const [readers, setReaders] = useState([])
         </Route>
 
         <Route path="/bookshelf">
-          <Bookshelf />
+          <Bookshelf 
+            readers={readers}
+          />
         </Route>
 
         <Route path="/readers">
-          <Readers />
+          <Readers 
+            readers={readers}
+          />
         </Route>
         
         <Route exact path="/">

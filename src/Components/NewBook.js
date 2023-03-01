@@ -8,19 +8,19 @@ const NewBook = () => {
   const [author, setAuthor] = useState('')
   const [genre, setGenre] = useState('')
   const [location, setLocation] = useState('')
-  const [read, setRead] = useState('')
+  const [read, setRead] = useState('No')
   const [reader, setReader] = useState('')
   const history = useHistory()
 // 
   const handleSubmit = (e) => {
     e.preventDefault();
     const newItem = {
-      title: title,
-      author: author,
-      genre: genre,
-      location: location,
-      read: read,
-      reader: reader 
+      title,
+      author,
+      genre,
+      location,
+      read,
+      reader
     }
 
     setTitle('')
@@ -30,16 +30,19 @@ const NewBook = () => {
     setRead('')
     setReader('')
 
+    // console.log(newItem)
+
     history.push('/bookshelf')
 
     fetch('http://localhost:9292/books', {
-      method: "POST",
-      headers: {
-        "Content-Type" : "application/json"
-      },
-      body: JSON.stringify(newItem)
-    })
-  }
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(newItem)
+        })
+    }
+
 
   return (
     <div>
@@ -78,13 +81,16 @@ const NewBook = () => {
 
           />
           <br/>
-          <label>Read:</label>
-          <input
-            type="text" 
+          <label htmlFor="read">Read?: </label>
+          <select
+            id="read"
             value={read}
-            onChange={e => setRead(e.target.value)}
+            onChange={(e) => setRead(e.target.value)}
+          >
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
 
-          />
           <br/>
           <label>Reader:</label>
           <input
