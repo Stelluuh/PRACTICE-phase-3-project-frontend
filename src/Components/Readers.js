@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import NewReader from './NewReader'
+import '../Stylesheets/Readers.css'
 
 const  Readers = () => {
     const [readers, setReaders] = useState([])
@@ -18,7 +19,7 @@ const  Readers = () => {
     const readerList = readers.map(reader => <li key={reader.id}>{reader.name}</li>)
 
   return (
-    <div>
+    <div className='readers'>
       <h3>List of Readers</h3>
       {readerList}
       <br/>

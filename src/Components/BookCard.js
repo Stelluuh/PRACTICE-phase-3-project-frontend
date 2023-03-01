@@ -18,7 +18,7 @@ const BookCard = ({book, onDeleteBook}) => {
       <td>{title}</td>
       <td>{author}</td> 
       <td>{genre}</td>
-      {/* <td>{bookshelf.location}</td> */}
+      <td>{bookshelf.location}</td>
       
       <td>
       <button className="btn1" type="button" >Edit</button>

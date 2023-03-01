@@ -5,4 +5,8 @@ th {
   td {
     height: 50px;
     vertical-align: bottom;
+    border: 1px solid #ddd;
+    padding: 8px;
   }
+
+  
