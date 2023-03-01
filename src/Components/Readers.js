@@ -1,15 +1,32 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import NewReader from './NewReader'
 
-const  Readers = ({ readers }) => {
-    console.log(readers)
+const  Readers = () => {
+    const [readers, setReaders] = useState([])
 
-    const readerList = readers.map(reader => <li>{reader.name}</li>)
+    useEffect(() => {
+        fetch('http://localhost:9292/readers')
+        .then(response => response.json())
+        .then(data => setReaders(data))
+    }, [])
+
     
+    function handleAddReader(newReader) {
+        setReaders([...readers, newReader])
+    }
+    
+    const readerList = readers.map(reader => <li key={reader.id}>{reader.name}</li>)
 
   return (
     <div>
-      <h1>List of Readers</h1>
+      <h3>List of Readers</h3>
       {readerList}
+      <br/>
+      <hr/>
+      <h3>Add new Reader</h3>
+      <NewReader 
+        onAddReader = {handleAddReader}
+        />
     </div>
   )
 }

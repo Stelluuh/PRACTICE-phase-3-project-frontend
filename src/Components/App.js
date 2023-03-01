@@ -8,17 +8,6 @@ import Readers from './Readers'
 
 
 const App = () => {
-  const [readers, setReaders] = useState([])
-
-  useEffect(() => {
-    fetch('http://localhost:9292/readers')
-    .then(response => response.json())
-    .then(data => setReaders(data))
-  }, [])
-  
-  // console.log(readers)
-  
-  
   
 
   return (
@@ -32,13 +21,13 @@ const App = () => {
 
         <Route path="/bookshelf">
           <Bookshelf 
-            readers={readers}
+            
           />
         </Route>
 
         <Route path="/readers">
           <Readers 
-            readers={readers}
+
           />
         </Route>
         

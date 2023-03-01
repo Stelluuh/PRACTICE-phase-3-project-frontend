@@ -28,7 +28,7 @@
                 <mxCell id="27" value="Shelf:&lt;br&gt;&lt;br&gt;- Book1&lt;br&gt;- Book 2&lt;br&gt;- Book 3&lt;br&gt;- Book 4&lt;br&gt;&lt;br&gt;&lt;br&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="80" y="660" width="680" height="260" as="geometry"/>
                 </mxCell>
-                <mxCell id="28" value="Form:&lt;br&gt;&lt;br&gt;Title&lt;br&gt;&lt;br&gt;Author&lt;br&gt;&lt;br&gt;Read: Yes/No" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="28" value="Form:&lt;br&gt;&lt;br&gt;Title&lt;br&gt;&lt;br&gt;Author&lt;br&gt;&lt;br&gt;Read: Yes/No" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="80" y="970" width="680" height="260" as="geometry"/>
                 </mxCell>
             </root>
