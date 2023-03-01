@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import NavBar from './NavBar';
 import NewBook from './NewBook';
-import Shelf from './Shelf';
+import Bookshelf from './Bookshelf';
 import Home from './Home';
+import Readers from './Readers'
 
 
-function App() {
+const App = () => {
+
+const [readers, setReaders] = useState([])
+
+
   return (
     <div className="App">
       <NavBar />
@@ -17,12 +22,12 @@ function App() {
         </Route>
 
         <Route path="/bookshelf">
-          <Shelf />
+          <Bookshelf />
         </Route>
 
-        {/* <Route path="/readers">
-          <Owners />
-        </Route> */}
+        <Route path="/readers">
+          <Readers />
+        </Route>
         
         <Route exact path="/">
           <Home />
