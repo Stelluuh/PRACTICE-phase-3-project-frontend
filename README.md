@@ -9,7 +9,10 @@
 6. Run React server: npm start
 
 
+## Resources
+1. Background images: https://www.freepik.com/free-photo/books-arrangement-shelf_34241204.htm#page=2&query=bookshelf&position=49&from_view=search&track=sph
 
+2. W3Schools: https://www.w3schools.com/css/default.asp
 <!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
