@@ -28,3 +28,9 @@ input:focus {
     background-color: #F0EBCE;
     padding: 0.5rem; 
   }
+
+.newbook {
+  margin-left: 5%;
+  margin-right:auto;
+  width:80%;
+}

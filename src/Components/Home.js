@@ -7,12 +7,12 @@ const Home = () => {
       <div className="home-container">
         <br/>
         <br/>
-      <h2>BookSelf</h2>
-      <p>BookSelf, is an App that allows users to keep track of all the books they have read in their lifetime. 
+      <h1>BookSelf</h1>
+      <h3>BookSelf, is an App that allows users to keep track of all the books they have read in their lifetime. 
         <br/>
         <br/>
         Users are allowed to add, remove, or edit books from their shelf.
-      </p>
+      </h3>
       
       </div>
     </div>
