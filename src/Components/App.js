@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import NavBar from './NavBar';
 import NewBook from './NewBook';
@@ -9,7 +9,13 @@ import ReaderDetails from './ReaderDetails';
 
 
 const App = () => {
-  
+  const [readers, setReaders] = useState([])
+
+    useEffect(() => {
+        fetch('http://localhost:9292/readers')
+        .then(response => response.json())
+        .then(data => setReaders(data))
+    }, [])
 
   return (
     <div className="App">
@@ -28,7 +34,9 @@ const App = () => {
 
         <Route exact path="/readers">
           <Readers 
-
+            key={readers.id}
+            readers={readers}
+            setReaders={setReaders}
           />
         </Route>
 

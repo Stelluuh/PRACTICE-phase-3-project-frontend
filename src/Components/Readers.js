@@ -1,16 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import NewReader from './NewReader'
 import ReaderDetails from './ReaderDetails'
 import '../Stylesheets/Readers.css'
 
-const  Readers = () => {
-    const [readers, setReaders] = useState([])
-
-    useEffect(() => {
-        fetch('http://localhost:9292/readers')
-        .then(response => response.json())
-        .then(data => setReaders(data))
-    }, [])
+const  Readers = ({ readers, setReaders }) => {
+    
 
     
     function handleAddReader(newReader) {
