@@ -4,7 +4,8 @@ import NavBar from './NavBar';
 import NewBook from './NewBook';
 import Bookshelf from './Bookshelf';
 import Home from './Home';
-import Readers from './Readers'
+import Readers from './Readers';
+import ReaderDetails from './ReaderDetails';
 
 
 const App = () => {
@@ -25,10 +26,14 @@ const App = () => {
           />
         </Route>
 
-        <Route path="/readers">
+        <Route exact path="/readers">
           <Readers 
 
           />
+        </Route>
+
+        <Route path="/readers/:id">
+          <ReaderDetails />
         </Route>
         
         <Route exact path="/">

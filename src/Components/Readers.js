@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import NewReader from './NewReader'
+import ReaderDetails from './ReaderDetails'
 import '../Stylesheets/Readers.css'
 
 const  Readers = () => {
@@ -16,7 +17,9 @@ const  Readers = () => {
         setReaders([...readers, newReader])
     }
     
-    const readerList = readers.map(reader => <li key={reader.id}>{reader.name}</li>)
+    // const readerList = readers.map(reader => console.log(reader.name))
+    const readerList = readers.map(reader => <ReaderDetails key={reader.id} reader={reader}/>)
+    // const readerList = readers.map(reader => <li key={reader.id}>{reader.name}</li>)
 
   return (
     <div className='readers'>

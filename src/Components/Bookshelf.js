@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import BookCard from './BookCard'
+import Book from './Book'
 import '../Stylesheets/Bookshelf.css'
 
 const Shelf = () => {
@@ -21,7 +21,7 @@ const Shelf = () => {
  
   const bookList = books.map((book) => {
     return (
-      <BookCard 
+      <Book
         key={book.id}
         book={book} 
         onDeleteBook = {handleDeleteBook}

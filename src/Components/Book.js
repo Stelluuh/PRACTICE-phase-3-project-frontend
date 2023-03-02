@@ -2,10 +2,10 @@ import React from 'react'
 import '../Stylesheets/BookCard.css'
 
 
-const BookCard = ({book, onDeleteBook}) => {
+const Book = ({book, onDeleteBook}) => {
   
   const {title, author, bookshelf, genre} = book
-  console.log(bookshelf)
+  // console.log(bookshelf)
 
   const handleDeleteButton = () => {
     fetch(`http://localhost:9292/books/${book.id}`, {
@@ -28,4 +28,4 @@ const BookCard = ({book, onDeleteBook}) => {
   )
 }
 
-export default BookCard
+export default Book
